@@ -10,7 +10,7 @@ func main() {
 	router.LoadHTMLGlob("templates/*")
 	router.GET("/index", func(c *gin.Context) {
 		c.HTML(http.StatusOK, "index.html", gin.H{
-			"title": "Main website",
+			"title": 422,
 		})
 	})
 	router.Run(":8080")
